@@ -41,6 +41,13 @@ app.get('/about',function(req,res){
   });
 });
 
+app.get('/projects',function(req,res){
+  res.render('projects.hbs',{
+    pageTitle:'Projects '
+  });
+});
+
+
 app.get('/',function(req,res){
   res.render('home.hbs',{
     pageTitle:'Home Page',
